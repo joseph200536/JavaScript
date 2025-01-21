@@ -1,0 +1,12 @@
+alert("Hello World");
+let bool = true;
+console.log(bool);
+let a = 30,b=20;
+alert(a+b);
+alert(a-b);
+alert(a*b);
+let s1 = "abc",s2 = "def";
+alert(s1+s2);
+console.log(typeof a);
+console.log(typeof bool);
+console.log(typeof s1);
