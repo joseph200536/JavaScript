@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- task 1 -->
+<div id="message">Old Content</div>
+
+<script>
+    const element = document.getElementById('message');
+    element.textContent = 'New Content';
+</script>
+
+<!-- task 2 -->
+<button id="myButton">Click Me</button>
+
+<script>
+    const button = document.getElementById('myButton');
+    button.addEventListener('click', () => {
+        alert('Button was clicked!');
+    });
+</script>
+
+<!-- task 3 -->
+<script>
+    const newElement = document.createElement('p');
+    newElement.textContent = 'This is a new paragraph!';
+    document.body.appendChild(newElement);
+</script>
+
+<!-- task 4 -->
+<button id="toggleButton">Toggle Visibility</button>
+<div id="content">This content will be toggled.</div>
+
+<script>
+    const button = document.getElementById('toggleButton');
+    const content = document.getElementById('content');
+
+    button.addEventListener('click', () => {
+        content.style.display = content.style.display === 'none' ? 'block' : 'none';
+    });
+</script>
+<!-- task 5 -->
+<img id="myImage" src="image.jpg" alt="Old image description">
+
+<script>
+    const image = document.getElementById('myImage');
+    image.setAttribute('alt', 'New image description');
+    image.setAttribute('src', 'new-image.jpg');
+</script>
+
+
+</body>
+</html>
